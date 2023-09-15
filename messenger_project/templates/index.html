@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Messenger App</title>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/chat.js' %}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            getChatList();
+        });
+    </script>
+</head>
+<body>
+    <div class="chat-list">
+        <!-- Здесь будут отображаться чаты -->
+    </div>
+    <div class="message-list">
+        <!-- Здесь будут отображаться сообщения в выбранном чате -->
+    </div>
+    <div class="message-input">
+        <input type="text" id="message-input" placeholder="Введите сообщение">
+        <button id="send-button">Отправить</button>
+    </div>
+</body>
+</html>
+
